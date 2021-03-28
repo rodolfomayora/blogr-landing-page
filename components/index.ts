@@ -3,3 +3,4 @@ export { default as Footer } from './Footer';
 export { default as Layout } from './Layout';
 export { default as Container } from './Container';
 export { default as PrimaryButton } from './PrimaryButton';
+export { default as Modal } from './Modal';

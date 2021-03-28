@@ -23,5 +23,5 @@ figure {
 a {
   text-decoration: none;
   // avoid translucid block with touch action on mobile
-  -webkit-highlight-color: $transparent;
+  -webkit-tap-highlight-color: $transparent;
 }
