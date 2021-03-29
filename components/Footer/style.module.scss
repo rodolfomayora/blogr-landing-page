@@ -1,9 +1,6 @@
 @import '../../styles/config';
 
 .Footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 74px;
   padding-bottom: 82px;
   font-family: 'Ubuntu';
@@ -11,20 +8,27 @@
   background-color: $neutral-veryDarkBlackBlue;
   border-top-right-radius: 100px;
 
+  // Container
+  & > :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .logo {
     width: 100px;
     margin-bottom: 80px;
   }
 
-  .categoryLinks {
+  .titleLinks {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: -0.4px;
     color: $neutral-white;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 
-  .navLinks {
+  .linksWrapper {
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -32,8 +36,69 @@
 
     // siblings elements
     &:first-of-type ~ * { margin-top: 54px; }
+  }
 
-    // inner elements
+  .linkList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // inner elements (not first)
     & > :first-child ~ * { margin-top: 13px; }
+
+    // all inner elements
+    & > * {
+      position: relative;
+
+      &:hover:after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $neutral-white;
+      }
+    }
+  }
+
+  @include medium {
+    padding-top: 80px;
+    padding-bottom: 76px;
+    border-top-right-radius: 104px;
+
+    // Container
+    & > :first-child {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .logo {
+      margin-right: 16.5%;
+      margin-bottom: 0;
+      margin-top: -8px;
+    }
+
+    .titleLinks {
+      font-size: 15px;
+      margin-bottom: 38px;
+    }
+
+    .linksWrapper {
+      flex-grow: 1;
+      align-items: flex-start;
+      font-size: 15px;
+
+      // siblings elements
+      &:first-of-type ~ * { margin-top: 0; }
+    }
+
+    .linkList {
+      align-items: flex-start;
+
+      // inner elements
+      & > :first-child ~ * { margin-top: 16px; }
+    }
   }
 }
