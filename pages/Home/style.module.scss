@@ -1,8 +1,6 @@
 @import '../../styles/config';
 
 .Home {
-  min-height: 150vh;
-
   .mainSection {
     position: relative;
     z-index: 0;
@@ -86,5 +84,128 @@
         max-width: none;
       }
     }
+  }
+
+  .featureSection1 {
+    position: relative;
+    z-index: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    // Container
+    & > :first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+
+    .titleSection {
+      color: $primary-veryDarkBlue;
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: -1.3px;
+      margin-bottom: 44px;
+    }
+
+    .sectionImage {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: none;
+      width: 406px;
+      margin-bottom: 40px;
+    }
+
+    .feature:first-of-type ~ * { margin-top: 46px; }
+
+    .featureTitle {
+      color: $primary-veryDarkBlue;
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin-bottom: 16px;
+      text-align: center;
+      padding: 0 50px;
+    }
+
+    .description {
+      font-size: 17px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 29px;
+      letter-spacing: 0.4px;
+      color: $neutral-veryDarkGrayishBlue;
+    }
+
+    .sectionImageDesktop {
+      height: 0;
+      visibility: hidden;
+      width: 0;
+    }
+
+    @include medium {
+      padding-top: 157px;
+      padding-bottom: 200px;
+
+      // Container
+      & > :first-child {
+        align-items: stretch;
+      }
+
+      .titleSection{
+        margin-bottom: 88px;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .sectionImage {
+        height: 0;
+        visibility: hidden;
+        width: 0;
+        transform: scale(0);
+        margin: 0;
+      }
+
+      .feature {
+        width: 49%;
+
+        &:first-of-type ~ * { margin-top: 70px; }
+      }
+
+      .featureTitle {
+        padding: 0;
+        margin-bottom: 25px;
+      }
+
+      .featureTitle,
+      .description { text-align: left; }
+
+      .description { letter-spacing: 0.1px; }
+
+      .sectionImageDesktop {
+        height: auto;
+        visibility: visible;
+
+        width: 65%;
+        position: absolute;
+        z-index: -1;
+        top: 53.6%;
+        right: -20.6%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    @include responsiveMinWith(1441px) {
+      .sectionImageDesktop {
+        width: 925px;
+        right: 44%;
+        transform: translate(100%, -50%);
+      }
+    }
+  }
+
+  .featureSection2 {
+    padding-top: 75px;
+    padding-bottom: 100px;
   }
 }
