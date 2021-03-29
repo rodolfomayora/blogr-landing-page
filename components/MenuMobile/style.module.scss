@@ -1,0 +1,17 @@
+@import '../../styles/config';
+
+.MenuMobile {
+
+  .autenthication {
+    margin-top: 25px;
+    padding-top: 6px;
+    text-align: center;
+    border-top: 2px solid $lightGrayishBlue
+  }
+
+  .logIn {
+    margin-top: 34px;
+    margin-bottom: 22px;
+    font-weight: 800;
+  }
+}

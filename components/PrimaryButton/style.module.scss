@@ -14,6 +14,7 @@
   transition:
     color 0.3s ease,
     background-color 0.3s ease;
+  overflow: hidden;
 
   &.white {
     color: $primary-lightRed;
@@ -33,6 +34,24 @@
     &:hover {
       color: $primary-veryLightRed;
       background-color: $neutral-white;
+    }
+  }
+
+  &.gradient {
+    position: relative;
+    color: $neutral-white;
+    background-image:
+      linear-gradient(90deg, $gradient-veryLightRed, $gradient-lightRed);
+
+    &:hover:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $neutral-white;
+      filter: opacity(0.4);
     }
   }
 }

@@ -10,7 +10,17 @@
   align-items: flex-end;
   height: 100px;
   padding-bottom: 12px;
-  background-color: hsla(271, 76%, 53%, 0.8);
+  background-color: $transparent;
+  transition:
+    height 0.5s ease,
+    box-shadow 0.5s ease,
+    background-color 0.5s ease;
+
+  &.scrolled {
+    height: 70px;
+    background-color: $primary-lightRed;
+    box-shadow: 0 0 10px $shadow;
+  }
 
   // Container
   & > :first-child { flex-grow: 1; }
