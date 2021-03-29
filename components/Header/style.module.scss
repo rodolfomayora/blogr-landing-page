@@ -19,6 +19,8 @@
   &.scrolled {
     height: 70px;
     background-color: $primary-lightRed;
+    background-image:
+      linear-gradient(90deg, $gradient-veryLightRed, $gradient-lightRed);
     box-shadow: 0 0 10px $shadow;
   }
 
@@ -36,5 +38,24 @@
   .menuButton {
     text-align: center;
     width: 32px;
+  }
+
+  @include medium {
+    height: 120px;
+
+    &.scrolled { height: 76px; }
+
+    .wrapper { align-items: flex-end; }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 6px;
+    }
+
+    .menuButton {
+      width: 0;
+      visibility: hidden;
+      position: fixed;
+    }
   }
 }

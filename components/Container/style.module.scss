@@ -10,8 +10,8 @@
   }
 
   // 1262px = max-width + padding-left + padding-right
-  @include responsiveMinWith(1262px) {
-    max-width: 1162px;
+  @include responsiveMinWith(1206px) {
+    max-width: 1106px;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;

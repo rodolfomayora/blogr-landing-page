@@ -20,7 +20,7 @@ const MenuMobile: FC = () => (
     </DropDown>
 
     <div className={style.autenthication}>
-      <div className={style.logIn}>Log In</div>
+      <div className={style.logIn}>Login</div>
       <PrimaryButton buttonStyle="gradient">
         Sign Up
       </PrimaryButton>

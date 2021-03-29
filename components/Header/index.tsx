@@ -3,6 +3,7 @@ import Container from '../Container';
 import Modal from '../Modal';
 import style from './style.module.scss';
 import MenuMobile from '../MenuMobile';
+import MenuDesktop from '../MenuDesktop';
 
 const Header: FC = () => {
 
@@ -26,12 +27,13 @@ const Header: FC = () => {
           setHeaderStyle(scrolledStyle);
         }
       }
-    }, 250);
+    }, 200);
 
     window.addEventListener('scroll', () => setIsScrolling(true));
 
     return () => clearInterval(intervarWatcher);
-  }, [isScrolling, headerStyle, initialStyle, scrolledStyle])
+  },
+  [isScrolling, headerStyle, initialStyle, scrolledStyle])
 
   return (
     <>
@@ -42,6 +44,8 @@ const Header: FC = () => {
             src="/images/svg/logo.svg"
             alt="Logo"
           />
+
+          <MenuDesktop />
   
           <div className={style.menuButton}
             onClick={() => setIsMenuOpen(crr => !crr)}

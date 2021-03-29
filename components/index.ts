@@ -8,4 +8,6 @@ export { default as CompanyLinks } from './CompanyLinks';
 export { default as ConnectLinks } from './ConnectLinks';
 export { default as ProductLinks } from './ProductLinks';
 export { default as DropDown } from './DropDown';
+export { default as DropDownDesktop } from './DropDownDesktop';
 export { default as MenuMobile } from './MenuMobile';
+export { default as MenuDesktop } from './MenuDesktop';
