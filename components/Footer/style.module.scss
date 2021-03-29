@@ -1,0 +1,39 @@
+@import '../../styles/config';
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 74px;
+  padding-bottom: 82px;
+  font-family: 'Ubuntu';
+  color: $neutral-grayishBlue;
+  background-color: $neutral-veryDarkBlackBlue;
+  border-top-right-radius: 100px;
+
+  .logo {
+    width: 100px;
+    margin-bottom: 80px;
+  }
+
+  .categoryLinks {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: $neutral-white;
+    margin-bottom: 20px;
+  }
+
+  .navLinks {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // siblings elements
+    &:first-of-type ~ * { margin-top: 54px; }
+
+    // inner elements
+    & > :first-child ~ * { margin-top: 13px; }
+  }
+}
