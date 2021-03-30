@@ -1,0 +1,27 @@
+html * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-family: 'Overpass', Segoe UI, Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img,
+figure {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  // avoid translucid block with touch action on mobile
+  -webkit-tap-highlight-color: $transparent;
+}

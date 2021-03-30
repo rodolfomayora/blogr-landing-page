@@ -1,0 +1,64 @@
+@import '../../styles/config';
+
+.Header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+  padding-bottom: 12px;
+  background-color: $transparent;
+  transition:
+    height 0.5s ease,
+    box-shadow 0.5s ease,
+    background-color 0.5s ease;
+
+  &.scrolled {
+    height: 70px;
+    background-color: $primary-lightRed;
+    background-image:
+      linear-gradient(
+        90deg,
+        $gradient-veryLightRed,
+        $gradient-lightRed
+      );
+    box-shadow: 0 0 10px $shadow;
+  }
+
+  // Container
+  & > :first-child { flex-grow: 1; }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logoWrapper { text-decoration: none; }
+
+  .logo { width: 82px; }
+
+  .menuButton {
+    text-align: center;
+    width: 32px;
+  }
+
+  @include medium {
+    height: 120px;
+
+    &.scrolled { height: 76px; }
+
+    .wrapper { align-items: flex-end; }
+
+    .logo { width: 100px; }
+
+    .menuButton {
+      width: 0;
+      visibility: hidden;
+      position: fixed;
+    }
+  }
+}

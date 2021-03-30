@@ -1,0 +1,435 @@
+@import '../../styles/config';
+
+.Home {
+  /* Main Section
+   ================================*/
+  .mainSection {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    height: 90vh;
+    padding-top: 44px;
+    color: $neutral-white;
+    border-bottom-left-radius: 100px;
+    background:
+      linear-gradient(
+        150deg,
+        $gradient-veryLightRed,
+        $gradient-lightRed
+      );
+    overflow: hidden;
+
+    .background {
+      position: absolute;
+      z-index: -1;
+      top: 38%;
+      left: 39%;
+      width: 375px;
+      height: auto;
+      transform: scale(3.6);
+    }
+
+    // Container
+    & > :first-child {
+      position: relative;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mainTitle {
+      font-size: 36px;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: -1px;
+      line-height: 45px;
+      padding: 0 10px;
+      max-width: 325px;
+    }
+
+    .mainParagraph {
+      margin-top: 13px;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      max-width: 325px;
+    }
+
+    .mainButtons {
+      display: flex;
+      justify-content: center;
+      margin-top: 43px;
+
+      & > :first-child { margin-right: 16px; }
+    }
+
+    @include medium {
+      padding-top: 94px;
+      height: 600px;
+      background:
+      linear-gradient(
+        90deg,
+        $gradient-veryLightRed,
+        $gradient-lightRed
+      );
+
+      .background {
+        top: -12%;
+        left: 58%;
+        width: 44%;
+        transform: scale(5);
+      }
+
+      .mainTitle {
+        font-size: 62px;
+        line-height: 76px;
+        max-width: none;
+      }
+
+      .mainParagraph {
+        letter-spacing: 1px;
+        margin-top: 24px;
+        max-width: none;
+      }
+    }
+  }
+
+  /* Features Section 1
+   ================================*/
+  .featureSection1 {
+    position: relative;
+    z-index: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    // Container
+    & > :first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+
+    .titleSection {
+      color: $primary-veryDarkBlue;
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: -1.3px;
+      margin-bottom: 44px;
+    }
+
+    .sectionImage {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: none;
+      width: 406px;
+      margin-bottom: 40px;
+    }
+
+    .feature:first-of-type ~ * { margin-top: 46px; }
+
+    .featureTitle {
+      color: $primary-veryDarkBlue;
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin-bottom: 16px;
+      text-align: center;
+      padding: 0 50px;
+    }
+
+    .description {
+      font-size: 17px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 29px;
+      letter-spacing: 0.4px;
+      color: $neutral-veryDarkGrayishBlue;
+    }
+
+    .sectionImageDesktop {
+      height: 0;
+      visibility: hidden;
+      width: 0;
+    }
+
+    @include medium {
+      padding-top: 157px;
+      padding-bottom: 200px;
+
+      // Container
+      & > :first-child {
+        align-items: stretch;
+      }
+
+      .titleSection{
+        margin-bottom: 88px;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .sectionImage {
+        height: 0;
+        visibility: hidden;
+        width: 0;
+        transform: scale(0);
+        margin: 0;
+      }
+
+      .feature {
+        width: 49%;
+
+        &:first-of-type ~ * { margin-top: 70px; }
+      }
+
+      .featureTitle {
+        padding: 0;
+        margin-bottom: 25px;
+      }
+
+      .featureTitle,
+      .description { text-align: left; }
+
+      .description { letter-spacing: 0.1px; }
+
+      .sectionImageDesktop {
+        height: auto;
+        visibility: visible;
+
+        width: 65%;
+        position: absolute;
+        z-index: -1;
+        top: 53.6%;
+        right: -20.6%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    @include extraLarge {
+      .sectionImageDesktop {
+        width: 925px;
+        right: 44%;
+        transform: translate(100%, -50%);
+      }
+    }
+  }
+
+  /* Banner Section
+   ================================*/
+  .bannerSection {
+    position: relative;
+    z-index: 0;
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 114px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image:
+      linear-gradient(
+        180deg,
+        $gradient-veryDarkBlue,
+        $gradient-veryDarkDesaturatedBlue
+      );
+
+    .backgroundWrapper {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+      overflow: hidden;
+    }
+
+    .bannerBackground {
+      position: relative;
+      top: -20%;
+      left: 50%;
+      width: 375px;
+      max-width: none;
+      height: auto;
+      transform:
+        translate(-50%, 0)
+        scale(1.6);
+    }
+
+    .imageWrapper {
+      position: relative;
+      height: 124px;
+    }
+
+    .phoneMockups {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      max-width: none;
+      width: 384px;
+      transform: translate(-50%, 0);
+    }
+
+    .bannerTitle {
+      color: $neutral-white;
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 600;
+      letter-spacing: -1.3px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 16px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 28px;
+      color: $neutral-grayishBlue;
+      letter-spacing: 0.4px;
+    }
+
+    @include medium {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-top: 114px;
+      padding-bottom: 104px;
+      background-image:
+        linear-gradient(
+          90deg,
+          $gradient-veryDarkBlue,
+          $gradient-veryDarkDesaturatedBlue
+        );
+
+      // Container
+      & > :first-child {
+        display: flex;
+        align-items: center;
+      }
+
+      .bannerBackground {
+        top: -46%;
+        transform:
+          translate(-166%, 0)
+          scale(2.7);
+      }
+
+      .imageWrapper {
+        flex-grow: 1;
+        height: 0;
+      }
+
+      .phoneMockups {
+        bottom: 50%;
+        width: 98%;
+        transform: translate(-59%, 53%);
+      }
+
+      .infoWapper { flex-basis: 49.6%; }
+
+      .description,
+      .bannerTitle { text-align: left; }
+
+    }
+  }
+
+/* Features Section 2
+   ================================*/
+  .featureSection2 {
+    position: relative;
+    z-index: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    .sectionImage {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: none;
+      width: 500px;
+      margin-bottom: 36px;
+    }
+
+    .feature:first-of-type ~ * { margin-top: 46px; }
+
+    .featureTitle {
+      color: $primary-veryDarkBlue;
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 17px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 29px;
+      letter-spacing: 0.4px;
+      color: $neutral-veryDarkGrayishBlue;
+    }
+
+    .sectionImageDesktop {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+      transform: scale(0);
+    }
+
+    @include medium {
+      padding-top: 260px;
+      padding-bottom: 304px;
+
+      // Container
+      & > :first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .imageWrapper {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transform: scale(0);
+      }
+
+      .feature {
+        width: 49.6%;
+
+        &:first-of-type ~ * { margin-top: 70px; }
+      }
+
+      .sectionImageDesktop {
+        width: 68%;
+        height: auto;
+        overflow: auto;
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        transform:
+          scale(1)
+          translate(-103%, -50%);
+      }
+
+      .featureTitle {
+        padding: 0;
+        margin-bottom: 25px;
+      }
+
+      .featureTitle,
+      .description { text-align: left; }
+
+      .description { letter-spacing: 0.1px; }
+    }
+
+    @include extraLarge {
+      .sectionImageDesktop { width: 980px; }
+    }
+  }
+}

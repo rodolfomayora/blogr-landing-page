@@ -1,0 +1,81 @@
+@import '../../styles/config';
+
+.DropDownDesktop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+
+  .toggleName {
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    color: $neutral-white;
+  }
+
+  .toggle{
+    cursor: pointer;
+    
+    &:after {
+      content: url('/images/svg/icon-arrow-light.svg');
+      display: inline-block;
+      margin-left: 8px;
+    }
+  }
+  
+  .itemWrapper {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 16px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 25px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: $neutral-white;
+
+    // each item
+    & > * {
+      font-size: 16px;
+      color: $neutral-veryDarkGrayishBlue;
+      
+      &:hover {
+        font-weight: 800;
+        cursor: pointer;
+      }
+    }
+
+    & > :first-child ~ * { margin-top: 15px; }
+  }
+
+  &:hover {
+    .toggle:after { transform: scaleY(-1); }
+
+    .toggleName:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $neutral-white;
+    }
+
+    .itemWrapper {
+      width: auto;
+      min-width: 160px;
+      height: auto;
+      visibility: visible;
+    }
+
+    .items { box-shadow: 0 10px 20px 4px $shadow; }
+  }
+}

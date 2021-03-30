@@ -1,0 +1,27 @@
+/* Responsive Mixins
+ ==================================*/
+
+@mixin medium {
+  @media screen and (min-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin extraLarge {
+  @media screen and (min-width: $extraLarge) {
+    @content;
+  }
+}
+
+// helper mixin for breakpoints extra
+@mixin responsiveMinWith($breakPoint) {
+  @media screen and (min-width: $breakPoint) {
+    @content;
+  }
+}

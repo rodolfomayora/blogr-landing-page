@@ -1,0 +1,110 @@
+@import '../../styles/config';
+
+.Footer {
+  padding-top: 74px;
+  padding-bottom: 82px;
+  font-family: 'Ubuntu';
+  color: $neutral-grayishBlue;
+  background-color: $neutral-veryDarkBlackBlue;
+  border-top-right-radius: 100px;
+
+  // Container
+  & > :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoWrapper { text-decoration: none; }
+
+  .logo {
+    width: 100px;
+    margin-bottom: 80px;
+  }
+
+  .titleLinks {
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: $neutral-white;
+    margin-bottom: 32px;
+  }
+
+  .linksWrapper {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // siblings elements
+    &:first-of-type ~ * { margin-top: 54px; }
+  }
+
+  .linkList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // inner elements (not first)
+    & > :first-child ~ * { margin-top: 13px; }
+
+    // all inner elements
+    & > * {
+      position: relative;
+      color: $neutral-grayishBlue;
+      cursor: pointer;
+
+      &:hover:after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $neutral-white;
+      }
+    }
+  }
+
+  @include medium {
+    padding-top: 80px;
+    padding-bottom: 76px;
+    border-top-right-radius: 104px;
+
+    // Container
+    & > :first-child {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .logoWrapper { flex-grow: 1; }
+    
+    .logo {
+      margin-right: 16.5%;
+      margin-bottom: 0;
+      margin-top: -8px;
+    }
+
+    .titleLinks {
+      font-size: 15px;
+      margin-bottom: 38px;
+    }
+
+    .linksWrapper {
+      flex-grow: 1;
+      align-items: flex-start;
+      font-size: 15px;
+
+      // siblings elements
+      &:first-of-type ~ * { margin-top: 0; }
+    }
+
+    .linkList {
+      align-items: flex-start;
+
+      // inner elements
+      & > :first-child ~ * { margin-top: 16px; }
+    }
+  }
+}
