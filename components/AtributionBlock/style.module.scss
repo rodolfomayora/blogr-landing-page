@@ -1,0 +1,50 @@
+$white: hsl(0, 50%, 100%);
+$gray: hsl(216, 3%, 62%);
+$gradient-veryLightRed: hsl(13, 100%, 72%);
+$gradient-lightRed    : hsl(353, 100%, 62%);
+$primary-veryDarkBlue: hsl(208, 49%, 24%);
+
+.Attribution {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  font-size: 11px;
+  text-align: center;
+  color: $white;
+  background-image:
+    linear-gradient(
+      90deg,
+      $gradient-veryLightRed,
+      $gradient-lightRed
+    );
+
+  a {
+    color: $white;
+    line-height: 16px;
+    margin-left: 4px;
+
+    &:hover {
+      color: $primary-veryDarkBlue;
+      font-weight: 800;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-left: 4px;
+      margin-bottom: -2px;
+      background:
+        url('./external-link.svg')
+        scroll
+        no-repeat
+        center / cover;
+    }
+
+    .icon {
+      width: 10px;
+      height: 10px;
+      fill: $white;
+    }
+  }
+}

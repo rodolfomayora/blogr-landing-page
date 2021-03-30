@@ -3,6 +3,7 @@ import LayoutProps from './type';
 import Head from 'next/head';
 import Header from '../Header';
 import Footer from '../Footer';
+import AtributionBlock from '../AtributionBlock';
 
 const Layout: FC<LayoutProps> = ({ children, pageTitle = 'Default' }) => (
   <>
@@ -16,6 +17,7 @@ const Layout: FC<LayoutProps> = ({ children, pageTitle = 'Default' }) => (
     <Header />
     {children}
     <Footer />
+    <AtributionBlock />
   </>
 );
 

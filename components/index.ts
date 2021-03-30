@@ -11,3 +11,4 @@ export { default as DropDown } from './DropDown';
 export { default as DropDownDesktop } from './DropDownDesktop';
 export { default as MenuMobile } from './MenuMobile';
 export { default as MenuDesktop } from './MenuDesktop';
+export { default as AtributionBlock } from './AtributionBlock';
