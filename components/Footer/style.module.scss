@@ -49,6 +49,7 @@
     // all inner elements
     & > * {
       position: relative;
+      cursor: pointer;
 
       &:hover:after {
         content: '';

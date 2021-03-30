@@ -13,6 +13,12 @@
   }
 }
 
+@mixin extraLarge {
+  @media screen and (min-width: $extraLarge) {
+    @content;
+  }
+}
+
 // helper mixin for breakpoints extra
 @mixin responsiveMinWith($breakPoint) {
   @media screen and (min-width: $breakPoint) {

@@ -86,7 +86,7 @@ const Home: FC = () => (
           <div className={style.imageWrapper}>
             <img className={style.sectionImage}
               src="/images/svg/illustration-laptop-mobile.svg"
-              alt="Illustation Editor Mobile"
+              alt="Illustation Laptop Mobile"
             />
           </div>
           <section className={style.feature}>
@@ -99,6 +99,11 @@ const Home: FC = () => (
             <p className={style.description}>Batteries Included. We built a simple and straightfordward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
           </section>
         </Container>
+
+        <img className={style.sectionImageDesktop}
+          src="/images/svg/illustration-laptop-desktop.svg"
+          alt="Illustation Laptop Desktop"
+        />
       </div>
 
     </main>

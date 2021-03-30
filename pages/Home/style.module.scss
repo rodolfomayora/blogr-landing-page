@@ -207,7 +207,7 @@
       }
     }
 
-    @include responsiveMinWith(1441px) {
+    @include extraLarge {
       .sectionImageDesktop {
         width: 925px;
         right: 44%;
@@ -292,6 +292,7 @@
 
     @include medium {
       margin-top: 50px;
+      margin-bottom: 50px;
       padding-top: 114px;
       padding-bottom: 104px;
       background-image:
@@ -321,11 +322,11 @@
 
       .phoneMockups {
         bottom: 50%;
-        width: 100%;
-        transform: translate(-59%, 52%);
+        width: 98%;
+        transform: translate(-59%, 53%);
       }
 
-      .infoWapper { flex-basis: 50%; }
+      .infoWapper { flex-basis: 49.6%; }
 
       .description,
       .bannerTitle { text-align: left; }
@@ -370,7 +371,52 @@
       color: $neutral-veryDarkGrayishBlue;
     }
 
-    @include  medium {
+    .sectionImageDesktop {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+      transform: scale(0);
+    }
+
+    @include medium {
+      padding-top: 260px;
+      padding-bottom: 304px;
+
+      // Container
+      & > :first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .imageWrapper {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transform: scale(0);
+      }
+
+      .feature {
+        width: 49.6%;
+
+        &:first-of-type ~ * { margin-top: 70px; }
+      }
+
+      .sectionImageDesktop {
+        width: 68%;
+        height: auto;
+        overflow: auto;
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        transform:
+          scale(1)
+          translate(-103%, -50%);
+      }
+
       .featureTitle {
         padding: 0;
         margin-bottom: 25px;
@@ -382,5 +428,8 @@
       .description { letter-spacing: 0.1px; }
     }
 
+    @include extraLarge {
+      .sectionImageDesktop { width: 980px; }
+    }
   }
 }
