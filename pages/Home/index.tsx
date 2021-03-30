@@ -16,8 +16,14 @@ const Home: FC = () => (
             Grow your audience and build your online brand
           </p>
           <div className={style.mainButtons}>
-            <PrimaryButton>Start for Free</PrimaryButton>
-            <PrimaryButton buttonStyle='transparent'>
+            <PrimaryButton path="/Pricing">
+              Start for Free
+            </PrimaryButton>
+
+            <PrimaryButton
+              buttonStyle='transparent'
+              path="/Features"
+            >
               Learn More
             </PrimaryButton>
           </div>

@@ -1,4 +1,5 @@
 import React, { FC, useState, useEffect } from 'react';
+import Link from 'next/link';
 import Container from '../Container';
 import Modal from '../Modal';
 import style from './style.module.scss';
@@ -16,12 +17,12 @@ const Header: FC = () => {
   useEffect(() => {
 
     const intervarWatcher: number = window.setInterval(() => {
+      if (window.pageYOffset === 0) {
+        setHeaderStyle(initialStyle);
+      }
+
       if (isScrolling) {
         setIsScrolling(false);
-        
-        if (window.pageYOffset === 0) {
-          setHeaderStyle(initialStyle);
-        }
 
         if (window.pageYOffset > 0 && initialStyle === headerStyle ) {
           setHeaderStyle(scrolledStyle);
@@ -40,10 +41,14 @@ const Header: FC = () => {
     <header className={headerStyle}>
       <Container>
         <div className={style.wrapper}>
-          <img className={style.logo}
-            src="/images/svg/logo.svg"
-            alt="Logo"
-          />
+          <Link href="/">
+            <a className={style.logoWrapper}>
+              <img className={style.logo}
+                src="/images/svg/logo.svg"
+                alt="Logo"
+              />
+            </a>
+          </Link>
 
           <MenuDesktop />
   

@@ -10,8 +10,10 @@
   }
 
   .logIn {
+    display: block;
     margin-top: 34px;
     margin-bottom: 22px;
+    color: $primary-veryDarkBlue;
     font-weight: 800;
   }
 }

@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
+import Link from 'next/link';
 
 const CompanyLinks: FC = () => (
   <>
-    <a>About</a>
-    <a>Team</a>
-    <a>Blog</a>
-    <a>Carrers</a>
+    <Link href="/About"><a>About</a></Link>
+    <Link href="/Team"><a>Team</a></Link>
+    <Link href="/Blog"><a>Blog</a></Link>
+    <Link href="/Careers"><a>Careers</a></Link>
   </>
 );
 

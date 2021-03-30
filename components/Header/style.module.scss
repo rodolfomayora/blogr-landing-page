@@ -20,7 +20,11 @@
     height: 70px;
     background-color: $primary-lightRed;
     background-image:
-      linear-gradient(90deg, $gradient-veryLightRed, $gradient-lightRed);
+      linear-gradient(
+        90deg,
+        $gradient-veryLightRed,
+        $gradient-lightRed
+      );
     box-shadow: 0 0 10px $shadow;
   }
 
@@ -32,6 +36,8 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .logoWrapper { text-decoration: none; }
 
   .logo { width: 82px; }
 
@@ -47,10 +53,7 @@
 
     .wrapper { align-items: flex-end; }
 
-    .logo {
-      width: 100px;
-      margin-bottom: 6px;
-    }
+    .logo { width: 100px; }
 
     .menuButton {
       width: 0;
