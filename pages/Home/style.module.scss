@@ -333,13 +333,54 @@
     }
   }
 
-
-
-
 /* Features Section 2
    ================================*/
   .featureSection2 {
-    padding-top: 75px;
+    position: relative;
+    z-index: 0;
+    padding-top: 60px;
     padding-bottom: 100px;
+
+    .sectionImage {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: none;
+      width: 500px;
+      margin-bottom: 36px;
+    }
+
+    .feature:first-of-type ~ * { margin-top: 46px; }
+
+    .featureTitle {
+      color: $primary-veryDarkBlue;
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 17px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 29px;
+      letter-spacing: 0.4px;
+      color: $neutral-veryDarkGrayishBlue;
+    }
+
+    @include  medium {
+      .featureTitle {
+        padding: 0;
+        margin-bottom: 25px;
+      }
+
+      .featureTitle,
+      .description { text-align: left; }
+
+      .description { letter-spacing: 0.1px; }
+    }
+
   }
 }

@@ -83,17 +83,24 @@ const Home: FC = () => (
       {/* Feature Section 2 */}
       <div className={style.featureSection2}>
         <Container>
-          <section>
-            <h3>Free, open, simple</h3>
-            <p>Blogr is a free and open source application backed by a large community of helpful developers, It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics, The architecture is clean and is relatively easy to learn.</p>
+          <div className={style.imageWrapper}>
+            <img className={style.sectionImage}
+              src="/images/svg/illustration-laptop-mobile.svg"
+              alt="Illustation Editor Mobile"
+            />
+          </div>
+          <section className={style.feature}>
+            <h3 className={style.featureTitle}>Free, open, simple</h3>
+            <p className={style.description}>Blogr is a free and open source application backed by a large community of helpful developers, It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics, The architecture is clean and is relatively easy to learn.</p>
           </section>
 
-          <section>
-            <h3>Powerful tooling</h3>
-            <p>Batteries Included. We built a simple and straightfordward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+          <section className={style.feature}>
+            <h3 className={style.featureTitle}>Powerful tooling</h3>
+            <p className={style.description}>Batteries Included. We built a simple and straightfordward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
           </section>
         </Container>
       </div>
+
     </main>
   </Layout>
 );
