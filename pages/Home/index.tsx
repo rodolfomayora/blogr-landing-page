@@ -50,17 +50,34 @@ const Home: FC = () => (
         </Container>
 
         <img className={style.sectionImageDesktop}
-            src="/images/svg/illustration-editor-desktop.svg"
-            alt="Illustation Editor Desktop"
-          />
+          src="/images/svg/illustration-editor-desktop.svg"
+          alt="Illustation Editor Desktop"
+        />
       </section>
         
       {/* BannerSection */}
-      <section>
+      <section className={style.bannerSection}>
         <Container>
-          <h2>State of the Art Infraestructure</h2>
-          <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+          <div className={style.imageWrapper}>
+            <img className={style.phoneMockups}
+              src="/images/svg/illustration-phones.svg"
+              alt="Mockups"
+            />
+          </div>
+          <div className={style.infoWapper}>
+            <h2 className={style.bannerTitle}>
+              State of the Art Infrastructure
+            </h2>
+            <p className={style.description}>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+          </div>
         </Container>
+
+        <div className={style.backgroundWrapper}>
+          <img className={style.bannerBackground}
+            src="/images/svg/bg-pattern-circles.svg"
+            alt="parttern circles"
+          />
+        </div>
       </section>
 
       {/* Feature Section 2 */}
