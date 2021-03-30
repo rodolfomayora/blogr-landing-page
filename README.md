@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Blogr landing page solution
 
-## Getting Started
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+### Screenshot
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![](./public/screenshot.jpg)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Links
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Solution URL: [https://github.com/rodolfomayora/blogr-landing-page.git](https://github.com/rodolfomayora/blogr-landing-page.git)
+- Live Site URL: [https://rodolfomayora.github.io/blogr-landing-page.git/](https://rodolfomayora.github.io/blogr-landing-page.git/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## My process
 
-To learn more about Next.js, take a look at the following resources:
+BLP-0: Project Configuration (dependencias y carpetas)
+BLP-1: Add Assets and Styles
+BLP-2: Create Layout and Container
+BLP-3: PrimaryButton
+BLP-4: Menu Mobile
+BLP-5: Header Desktop
+BLP-6: Footer Mobile
+BLP-7: Footer Desktop
+BLP-8: MainSection Mobile
+BLP-9 :MainSection Desktop
+BLP-10: FeatureSection1 Mobile
+BLP-11: FeatureSection1 Desktop
+BLP-12: BannerSection Mobile
+BLP-13: FeatureSection2 Mobile
+BLP-14: FeatureSection2 Desktop
+BLP-15: add AtributionBlock Component
+BLP-16: add inner pages
+BLP-17: Export as Static HTML and Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Built with
 
-## Deploy on Vercel
+- Semantic HTML5 markup
+- Flexbox
+- Mobile-first workflow
+- [NextJS](https://nextjs.org/) - ReactJS Framework
+- [TypeScript](https://www.typescriptlang.org/) - JS Superset
+- [SASS](https://sass-lang.com/) - CSS Pre-procesor
+- [CSS Modules](https://github.com/css-modules/css-modules) - For Scoped styles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Author
+
+- Website - [https://rodolfomayora.github.io/mi-portafolio/](https://rodolfomayora.github.io/mi-portafolio/)
+- LinkedIn - [https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web](https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/rodolfomayora](https://www.frontendmentor.io/profile/rodolfomayora)
