@@ -1,0 +1,33 @@
+@import '../../styles/config';
+
+.SplashScreen {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    linear-gradient(
+      180deg,
+      $gradient-veryLightRed,
+      $gradient-lightRed 
+    );
+  transition: opacity 1s ease;
+
+  &.hidden { opacity: 0; }
+
+  .logo {
+    will-change: transform;
+    animation: scaling 1s ease 0s infinite;
+  }
+}
+
+@keyframes scaling {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

@@ -11,9 +11,6 @@ const Layout: FC<LayoutProps> = ({ children, pageTitle = 'Default' }) => (
       <title>{pageTitle} {' '} | Blogr Landing Page</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="page description" />
-      <meta name="keywords" content="blogr, blog, blogs, post, posts editor, content, management" />
-      <meta name="theme-color" content="#ff8f70" />
-      <link rel="icon" href="/favicon.png" />
     </Head>
     <Header />
     {children}
