@@ -9,32 +9,44 @@ import MenuDesktop from '../MenuDesktop';
 const Header: FC = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
-  const initialStyle: string = style.Header;
-  const scrolledStyle: string = style.Header + ' ' + style.scrolled;
-  const [headerStyle, setHeaderStyle] = useState<string>(initialStyle);
-  const [isScrolling, setIsScrolling] = useState<boolean>(false);
+  const [headerStyle, setHeaderStyle] = useState<string>(style.Header);
   useEffect(() => {
+    const initialStyle: string = style.Header;
+    const scrolledStyle: string = style.Header + ' ' + style.scrolled;
+    let isScrolling: boolean = false;
+    let isInTop: boolean = true;
 
     const intervarWatcher: number = window.setInterval(() => {
-      if (window.pageYOffset === 0) {
+
+      const scrollOffSet: number = window.pageYOffset;
+
+      if (scrollOffSet === 0) {
+        isInTop = true;
         setHeaderStyle(initialStyle);
       }
 
       if (isScrolling) {
-        setIsScrolling(false);
+        isScrolling = false;
 
-        if (window.pageYOffset > 0 && initialStyle === headerStyle ) {
+        if (scrollOffSet > 0 && isInTop ) {
+          isInTop = false;
           setHeaderStyle(scrolledStyle);
         }
       }
     }, 200);
 
-    window.addEventListener('scroll', () => setIsScrolling(true));
+    const setScrollTrue = (): void => {
+      isScrolling = true;
+    }
 
-    return () => clearInterval(intervarWatcher);
+    window.addEventListener('scroll', setScrollTrue);
+
+    return () => {
+      clearInterval(intervarWatcher);
+      window.removeEventListener('scroll', setScrollTrue); 
+    }
   },
-  [isScrolling, headerStyle, initialStyle, scrolledStyle])
+  [])
 
   return (
     <>

@@ -1,6 +1,7 @@
 # Frontend Mentor - Blogr landing page solution
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP).
+
 
 ### Screenshot
 
@@ -15,24 +16,24 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 ## My process
 
-BLP-0: Project Configuration (dependencias y carpetas)
-BLP-1: Add Assets and Styles
-BLP-2: Create Layout and Container
-BLP-3: PrimaryButton
-BLP-4: Menu Mobile
-BLP-5: Header Desktop
-BLP-6: Footer Mobile
-BLP-7: Footer Desktop
-BLP-8: MainSection Mobile
-BLP-9 :MainSection Desktop
-BLP-10: FeatureSection1 Mobile
-BLP-11: FeatureSection1 Desktop
-BLP-12: BannerSection Mobile
-BLP-13: FeatureSection2 Mobile
-BLP-14: FeatureSection2 Desktop
-BLP-15: add AtributionBlock Component
-BLP-16: add inner pages
-BLP-17: Export as Static HTML and Deploy
+- BLP-0: Project Configuration (dependencias y carpetas)
+- BLP-1: Add Assets and Styles
+- BLP-2: Create Layout and Container
+- BLP-3: PrimaryButton
+- BLP-4: Menu Mobile
+- BLP-5: Header Desktop
+- BLP-6: Footer Mobile
+- BLP-7: Footer Desktop
+- BLP-8: MainSection Mobile
+- BLP-9 :MainSection Desktop
+- BLP-10: FeatureSection1 Mobile
+- BLP-11: FeatureSection1 Desktop
+- BLP-12: BannerSection Mobile
+- BLP-13: FeatureSection2 Mobile
+- BLP-14: FeatureSection2 Desktop
+- BLP-15: add AtributionBlock Component
+- BLP-16: add inner pages
+- BLP-17: Export as Static HTML and Deploy
 
 
 ### Built with
@@ -48,6 +49,6 @@ BLP-17: Export as Static HTML and Deploy
 
 ## Author
 
-- Website - [https://rodolfomayora.github.io/mi-portafolio/](https://rodolfomayora.github.io/mi-portafolio/)
-- LinkedIn - [https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web](https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web)
+- Website - [https://rodolfo-mayora-pereda.vercel.app](https://rodolfo-mayora-pereda.vercel.app)
+- LinkedIn - [https://www.linkedin.com/in/rodolfo-mayora-pereda](https://www.linkedin.com/in/rodolfo-mayora-pereda)
 - Frontend Mentor - [https://www.frontendmentor.io/profile/rodolfomayora](https://www.frontendmentor.io/profile/rodolfomayora)
