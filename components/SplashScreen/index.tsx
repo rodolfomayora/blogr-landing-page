@@ -28,7 +28,9 @@ const SplashScreen: FC = () => {
         alt="blogr logo"  
       />
     </div>
-  ) : <></>
+  ) : (
+    <></>
+  )
 }
 
 export default SplashScreen;
