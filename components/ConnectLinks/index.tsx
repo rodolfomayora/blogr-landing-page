@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const ConnectLinks: FC = () => (
   <>
-    <Link href="/Contact"><a>Contact</a></Link>
+    <Link href="/contact"><a>Contact</a></Link>
 
     <a href="https://www.google.com/intl/es-419/gmail/about/"
       target="_blank"
