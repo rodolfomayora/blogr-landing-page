@@ -23,13 +23,13 @@ const MenuDesktop: FC = () => (
     </div>
 
     <div className={style.autenthication}>
-      <Link href="/Account">
+      <Link href="/account">
         <a className={style.logIn}>Login</a>
       </Link>
       
       <PrimaryButton
         buttonStyle="white"
-        path="/Account"
+        path="/account"
       >
         Sign Up
       </PrimaryButton>

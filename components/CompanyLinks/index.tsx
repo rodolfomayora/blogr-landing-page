@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 const CompanyLinks: FC = () => (
   <>
-    <Link href="/About"><a>About</a></Link>
-    <Link href="/Team"><a>Team</a></Link>
-    <Link href="/Blog"><a>Blog</a></Link>
-    <Link href="/Careers"><a>Careers</a></Link>
+    <Link href="/about"><a>About</a></Link>
+    <Link href="/team"><a>Team</a></Link>
+    <Link href="/blog"><a>Blog</a></Link>
+    <Link href="/careers"><a>Careers</a></Link>
   </>
 );
 

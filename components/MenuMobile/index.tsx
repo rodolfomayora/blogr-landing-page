@@ -10,24 +10,24 @@ import PrimaryButton from '../PrimaryButton';
 
 const MenuMobile: FC = () => (
   <nav className={style.MenuMobile}>
-    <DropDown toggleName="Product">
+    <DropDown toggleName="product">
       <ProductLinks />
     </DropDown>
-    <DropDown toggleName="Company">
+    <DropDown toggleName="company">
       <CompanyLinks />
     </DropDown>
-    <DropDown toggleName="Connect">
+    <DropDown toggleName="connect">
       <ConnectLinks />
     </DropDown>
 
     <div className={style.autenthication}>
-      <Link href="/Account">
+      <Link href="/account">
         <a className={style.logIn}>Login</a>
       </Link>
         
       <PrimaryButton
         buttonStyle="gradient"
-        path="/Account"
+        path="/account"
       >
         Sign Up
       </PrimaryButton>
