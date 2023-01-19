@@ -11,7 +11,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [https://github.com/rodolfomayora/blogr-landing-page.git](https://github.com/rodolfomayora/blogr-landing-page.git)
-- Live Site URL: [https://blogr-landing-page-orcin.vercel.app/](https://blogr-landing-page-orcin.vercel.app/)
+- Live Site URL: [https://my-blogr-landing-page.vercel.app](https://my-blogr-landing-page.vercel.app)
 
 
 ## My process
