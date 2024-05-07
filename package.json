@@ -2,12 +2,16 @@
   "name": "blogr-landing-page",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --hostname 0.0.0.0 --port 3001",
     "build": "next build",
     "start": "next start",
-    "cz": "cz",
-    "prepare": "husky"
+    "dev:docker": "docker compose --profile dev up --build --watch",
+    "build:docker": "docker compose --profile prod build",
+    "start:docker": "docker compose --profile prod up",
+    "prepare": "husky",
+    "cz": "cz"
   },
   "dependencies": {
     "next": "12.3.0",
@@ -25,5 +29,9 @@
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.0.11",
     "typescript": "4.3.2"
-  }
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "packageManager": "pnpm@8.15.8+sha256.691fe176eea9a8a80df20e4976f3dfb44a04841ceb885638fe2a26174f81e65e"
 }
