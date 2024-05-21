@@ -19,15 +19,23 @@
     "jsx": "preserve",
     "baseUrl": "./src",
     "paths": {
-      "#/*": ["./*"],
-      "#components*": ["./components/*"],
-    }
+      "#/*": [
+        "./*"
+      ],
+      "#components*": [
+        "./components/*"
+      ]
+    },
+    "types": [
+      "vitest/globals"
+    ],
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.mjs",
+    "**/*.mjs"
   ],
   "exclude": [
     "node_modules"
