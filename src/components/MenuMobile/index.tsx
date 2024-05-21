@@ -5,8 +5,7 @@ import DropDown from '../DropDown';
 import ProductLinks from '../ProductLinks';
 import CompanyLinks from '../CompanyLinks';
 import ConnectLinks from '../ConnectLinks';
-import PrimaryButton from '../PrimaryButton';
-
+import { ButtonLinkGradient } from '#components/ButtonLinkGradient';
 
 const MenuMobile: FC = () => (
   <nav className={style.MenuMobile}>
@@ -25,12 +24,9 @@ const MenuMobile: FC = () => (
         <a className={style.logIn}>Login</a>
       </Link>
         
-      <PrimaryButton
-        buttonStyle="gradient"
-        path="/account"
-      >
+      <ButtonLinkGradient href="/account">
         Sign Up
-      </PrimaryButton>
+      </ButtonLinkGradient>
     </div>
   </nav>
 )

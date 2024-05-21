@@ -5,8 +5,7 @@ import DropDownDesktop from '../DropDownDesktop';
 import ProductLinks from '../ProductLinks';
 import CompanyLinks from '../CompanyLinks';
 import ConnectLinks from '../ConnectLinks';
-import PrimaryButton from '../PrimaryButton';
-
+import { ButtonLink } from '#components/ButtonLink';
 
 const MenuDesktop: FC = () => (
   <nav className={style.MenuDesktop}>
@@ -27,12 +26,9 @@ const MenuDesktop: FC = () => (
         <a className={style.logIn}>Login</a>
       </Link>
       
-      <PrimaryButton
-        buttonStyle="white"
-        path="/account"
-      >
+      <ButtonLink href="/account">
         Sign Up
-      </PrimaryButton>
+      </ButtonLink>
     </div>
   </nav>
 )

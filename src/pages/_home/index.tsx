@@ -1,4 +1,6 @@
-import { Layout, Container, PrimaryButton } from '#components/index';
+import { Layout, Container } from '#components/index';
+import { ButtonLink } from '#components/ButtonLink';
+import { ButtonLinkOutlined } from '#components/ButtonLinkOutlined';
 import style from './style.module.scss';
 
 export function Home () {
@@ -16,16 +18,13 @@ export function Home () {
               Grow your audience and build your online brand
             </p>
             <div className={style.mainButtons}>
-              <PrimaryButton path="/Pricing">
+              <ButtonLink href="/pricing">
                 Start for Free
-              </PrimaryButton>
+              </ButtonLink>
 
-              <PrimaryButton
-                buttonStyle='transparent'
-                path="/Features"
-              >
+              <ButtonLinkOutlined href="/features">
                 Learn More
-              </PrimaryButton>
+              </ButtonLinkOutlined>
             </div>
           </Container>
           <img className={style.background}
