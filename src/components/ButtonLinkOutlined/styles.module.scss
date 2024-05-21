@@ -1,0 +1,14 @@
+@import '#components/ButtonLink/styles.module.scss';
+
+.ButtonLinkOutlined {
+  @extend .ButtonLink;
+
+  color: $neutral-white;
+  background-color: $transparent;
+  border-color: $neutral-white;
+
+  &:hover {
+    color: $primary-veryLightRed;
+    background-color: $neutral-white;
+  }
+}
