@@ -15,42 +15,59 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 - Solution URL: [https://github.com/rodolfomayora/blogr-landing-page.git](https://github.com/rodolfomayora/blogr-landing-page.git)
 - Live Site URL: [https://my-blogr-landing-page.vercel.app](https://my-blogr-landing-page.vercel.app)
 
+<br />
 
-## My process
+---
 
-- BLP-0: Project Configuration (dependencias y carpetas)
-- BLP-1: Add Assets and Styles
-- BLP-2: Create Layout and Container
-- BLP-3: PrimaryButton
-- BLP-4: Menu Mobile
-- BLP-5: Header Desktop
-- BLP-6: Footer Mobile
-- BLP-7: Footer Desktop
-- BLP-8: MainSection Mobile
-- BLP-9 :MainSection Desktop
-- BLP-10: FeatureSection1 Mobile
-- BLP-11: FeatureSection1 Desktop
-- BLP-12: BannerSection Mobile
-- BLP-13: FeatureSection2 Mobile
-- BLP-14: FeatureSection2 Desktop
-- BLP-15: add AtributionBlock Component
-- BLP-16: add inner pages
-- BLP-17: Export as Static HTML and Deploy
-
-
-### Built with
-
-- Semantic HTML5 markup
-- Flexbox
-- Mobile-first workflow
-- [NextJS](https://nextjs.org/) - ReactJS Framework
-- [TypeScript](https://www.typescriptlang.org/) - JS Superset
-- [SASS](https://sass-lang.com/) - CSS Pre-procesor
-- [CSS Modules](https://github.com/css-modules/css-modules) - For Scoped styles
-
-
-## Author
+### Author
 
 - Website - [https://rodolfo-mayora-pereda.vercel.app](https://rodolfo-mayora-pereda.vercel.app)
 - LinkedIn - [https://www.linkedin.com/in/rodolfo-mayora-pereda](https://www.linkedin.com/in/rodolfo-mayora-pereda)
 - Frontend Mentor - [https://www.frontendmentor.io/profile/rodolfomayora](https://www.frontendmentor.io/profile/rodolfomayora)
+
+
+<br />
+
+---
+
+### Run Development Server with Docker
+
+
+1. Just run:
+    ```bash
+    npm dev:docker
+    ```
+<br />
+
+2. Open [http://localhost:3001](http://localhost:3001) in your browser.
+
+
+<br />
+
+### Run Developer Server with PNPM
+
+1. Install PNPM `v8.x`:
+    - Option #1: Install PNPM globally with NPM
+      ```bash
+      npm install -g pnpm@8.x
+      ```
+
+    - Option #2: If you have at least Node `v18.x` just use corepack within the project directory to use PNPM locally
+      ```bash
+      corepack enable && corepack install
+      ``` 
+<br />
+
+2. Install dependencies
+    ```bash
+    pnpm install
+    ```
+<br />
+
+4. Run dev server
+    ```bash
+    pnpm dev
+    ```
+<br />
+
+5. Open [http://localhost:3001](http://localhost:3001) in your browser.
